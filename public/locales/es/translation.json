@@ -47,7 +47,20 @@
       "description": "Vive una experiencia romántica en la Ciudad del Amor, con cenas especiales, paseos y hoteles de lujo incluidos.",
       "fullDescription": "Déjate llevar por la magia de la Ciudad del Amor. Este paquete romántico incluye una cena en la Torre Eiffel, paseos por Montmartre y una experiencia de lujo diseñada especialmente para parejas que quieren celebrar su amor de manera inolvidable.",
       "includes": ["Vuelos de ida y vuelta","Hotel boutique 5 estrellas (18 noches)","Desayuno y cena romántica incluidos","Guía bilingüe","Traslados en limusina","Cena privada en la Torre Eiffel"]
-    }
+    },
+    "filter": {
+    "all":       "Todos",
+    "asia":      "Asia",
+    "europe":    "Europa",
+    "america":   "América",
+    "africa":    "África",
+    "oceania":   "Oceanía",
+    "anyBudget": "Cualquier presupuesto",
+    "low":       "Económico",
+    "mid":       "Intermedio",
+    "high":      "Premium",
+    "empty":     "No hay paquetes con esos filtros."
+  }
   },
   "destinations": {
     "title": "Nuestros mejores destinos",
@@ -57,18 +70,18 @@
     "currencies": "Monedas",
     "loading": "Cargando destinos..."
   },
-  "qa": {
-    "title": "FAQ",
-    "subtitle": "Preguntas frecuentes sobre nuestros servicios de viaje",
-    "items": [
-      { "question": "¿Cómo puedo reservar un paquete?", "answer": "Puedes reservar directamente desde nuestra página web seleccionando el paquete deseado y completando el formulario de cotización. Nuestro equipo se pondrá en contacto contigo en menos de 24 horas para confirmar tu reserva." },
-      { "question": "¿Qué incluye cada paquete?", "answer": "Cada paquete incluye vuelos de ida y vuelta, hospedaje en hotel, desayuno, guía bilingüe y traslados aeropuerto-hotel. Algunos paquetes también incluyen tours adicionales y cenas especiales." },
-      { "question": "¿Puedo personalizar mi plan de viaje?", "answer": "¡Por supuesto! Ofrecemos paquetes personalizados según tus necesidades. Contáctanos y uno de nuestros asesores diseñará un itinerario de acuerdo a tus preferencias y presupuesto." },
-      { "question": "¿Cuál es la política de cancelación?", "answer": "Las cancelaciones realizadas con 30 días o más de anticipación reciben reembolso total. Entre 15 y 29 días, se reembolsa el 50%. Dentro de los 14 días no aplica reembolso, pero podemos reprogramar tu viaje." },
-      { "question": "¿El seguro de viaje está incluido?", "answer": "El seguro básico de viaje está incluido en todos nuestros paquetes. También ofrecemos la opción de mejorar a cobertura premium que incluye emergencias médicas, interrupción del viaje y equipaje perdido." },
-      { "question": "¿Con cuánta anticipación debo reservar?", "answer": "Recomendamos reservar con al menos 4 a 6 semanas de anticipación para garantizar disponibilidad y los mejores precios. En temporadas altas como verano y festividades, sugerimos hacerlo con 3 a 4 meses de anticipación." }
-    ]
-  },
+ "qa": {
+  "title": "Preguntas frecuentes",
+  "subtitle": "Preguntas frecuentes sobre nuestros servicios de viaje",
+  "items": [
+    { "question": "¿Cómo reservo un paquete?", "answer": "Puedes reservar directamente desde nuestra página web seleccionando el paquete que deseas y llenando el formulario de cotización. Nuestro equipo se pondrá en contacto contigo en un plazo de 24 horas para confirmar tu reserva." },
+    { "question": "¿Qué incluye cada paquete?", "answer": "Cada paquete incluye vuelos de ida y vuelta, alojamiento en hotel, desayuno, guía bilingüe y traslados aeropuerto-hotel. Algunos paquetes también incluyen tours adicionales y cenas especiales." },
+    { "question": "¿Puedo personalizar mi plan de viaje?", "answer": "¡Por supuesto! Ofrecemos paquetes personalizados adaptados a tus necesidades. Contáctanos y uno de nuestros asesores diseñará un itinerario según tus preferencias y presupuesto." },
+    { "question": "¿Cuál es la política de cancelación?", "answer": "Las cancelaciones realizadas con 30 o más días de anticipación al viaje reciben un reembolso completo. Entre 15 y 29 días, se reembolsa el 50%. Dentro de los 14 días, no aplica reembolso, pero podemos reprogramar tu viaje." },
+    { "question": "¿Está incluido el seguro de viaje?", "answer": "El seguro de viaje básico está incluido en todos nuestros paquetes. También ofrecemos la opción de mejorar a una cobertura premium que incluye emergencias médicas, interrupción del viaje y pérdida de equipaje." },
+    { "question": "¿Con cuánta anticipación debo reservar?", "answer": "Recomendamos reservar con al menos 4 a 6 semanas de anticipación para garantizar disponibilidad y los mejores precios. En temporadas altas como verano y días festivos, sugerimos reservar con 3 a 4 meses de antelación." }
+  ]
+},
   "opinions": {
     "titleLine1": "Mira lo que dicen",
     "titleLine2": "nuestros clientes",
@@ -77,7 +90,7 @@
       { "name": "Julio Gallegos", "review": "Una experiencia increíble de principio a fin. El equipo cuidó cada detalle y nuestro viaje a Tokio fue absolutamente inolvidable. ¡Totalmente recomendado!" },
       { "name": "Alberto Sebastian", "review": "El paquete familiar a Roma fue perfecto. Nuestros hijos disfrutaron cada momento y el guía bilingüe facilitó todo. Sin duda volveremos a reservar." },
       { "name": "Paola Penagos", "review": "Nuestra luna de miel en París superó todas las expectativas. La cena privada en la Torre Eiffel fue mágica. Go World hizo realidad nuestro viaje soñado." },
-      { "name": "Dianelly Mijangos", "review": "Profesionales, atentos y con una verdadera pasión por los viajes. Desde la reserva hasta el último día, todo fluyó a la perfección. ¡Cinco estrellas sin dudarlo!" }
+      { "name": "Dianelly Mijangos", "review": "Profesionales, atentos y con una verdadera pasión por los viajes.Disfrute mi viaje a francia, Desde la reserva hasta el último día, todo fluyó a la perfección. ¡Cinco estrellas sin dudarlo!" }
     ]
   },
   "about": {
@@ -170,5 +183,8 @@
     "errors": {
       "selectDestination": "Por favor selecciona un destino antes de calcular."
     }
-  }
+    
+}
+  
+  
 }

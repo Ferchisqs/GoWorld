@@ -9,8 +9,9 @@ import type { QuoteResult } from "../../data/quoteData";
 
 const Quote = () => {
   const { theme } = useTheme();
-  const { t } = useTranslation();
+const { t, i18n } = useTranslation(); 
 
+const currency = i18n.language === "es" ? "MXN" : "USD"; 
   //  Form state 
   const [destination, setDestination] = useState("");
   const [travelers, setTravelers] = useState(2);
@@ -86,7 +87,7 @@ const Quote = () => {
             onCalculate={handleCalculate}
           />
           <div className="md:sticky md:top-24">
-            <QuoteResultPanel result={result} calculated={calculated} theme={theme} />
+            <QuoteResultPanel result={result} calculated={calculated} theme={theme} currency={currency} />
           </div>
         </div>
 

@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import type {DestinationData} from '../types/destination.types';
+import type { DestinationData } from "../types/destination.types";
 
 interface CountryRaw {
   name: { common: string };
@@ -9,8 +9,7 @@ interface CountryRaw {
   currencies: Record<string, { name: string; symbol: string }>;
 }
 
-const UNSPLASH_ACCESS_KEY = "469FEa9m3dS16TFvr_m5HQ11iNbjO3RYfJAtjUJbKhY";
-
+const UNSPLASH_ACCESS_KEY = import.meta.env.VITE_UNSPLASH_ACCESS_KEY as string;
 
 const COUNTRIES = [
   { query: "canada",   search: "canadian flag" },
@@ -28,38 +27,24 @@ async function fetchCountry(name: string): Promise<CountryRaw> {
 }
 
 async function fetchUnsplashImage(query: string): Promise<string> {
-  console.log(` Buscando imagen para: "${query}"`);
-
   if (!UNSPLASH_ACCESS_KEY) {
-    const fallback = `https://picsum.photos/seed/${encodeURIComponent(query)}/800/600`;
-    console.warn(` Sin API key — usando fallback Picsum: ${fallback}`);
-    return fallback;
+    return `https://picsum.photos/seed/${encodeURIComponent(query)}/800/600`;
   }
 
   const url = `https://api.unsplash.com/search/photos?query=${encodeURIComponent(query)}&per_page=3&orientation=landscape&content_filter=high`;
-  console.log(` Fetch a Unsplash:`, url);
 
   const res = await fetch(url, {
-    headers: {
-      Authorization: `Client-ID ${UNSPLASH_ACCESS_KEY}`,
-    },
+    headers: { Authorization: `Client-ID ${UNSPLASH_ACCESS_KEY}` },
   });
-
-  console.log(`Respuesta Unsplash status: ${res.status}`);
 
   if (!res.ok) throw new Error("Error fetching Unsplash image");
 
   const data = await res.json();
-  console.log(`Resultados para "${query}":`, data.results?.length ?? 0, "fotos");
-  data.results?.forEach((r: { id: string; likes: number; urls: { regular: string } }, i: number) => {
-    console.log(`  [${i}] id: ${r.id} | likes: ${r.likes} | url: ${r.urls?.regular?.slice(0, 60)}...`);
-  });
+  const sorted = [...(data.results ?? [])].sort(
+    (a: { likes: number }, b: { likes: number }) => b.likes - a.likes
+  );
 
-  const sorted = [...(data.results ?? [])].sort((a: { likes: number }, b: { likes: number }) => b.likes - a.likes);
-  const finalUrl = sorted[0]?.urls?.regular ?? "";
-  console.log(`Imagen seleccionada para "${query}": ${finalUrl.slice(0, 80)}...`);
-
-  return finalUrl;
+  return sorted[0]?.urls?.regular ?? "";
 }
 
 function formatPopulation(pop: number): string {
@@ -77,7 +62,6 @@ export function useDestinations() {
     let cancelled = false;
 
     async function load() {
-      console.log("useDestinations: iniciando carga...");
       try {
         setLoading(true);
         setError(null);
@@ -88,8 +72,6 @@ export function useDestinations() {
               fetchCountry(query),
               fetchUnsplashImage(search),
             ]);
-
-            console.log(`País cargado: ${country.name.common} | imagen: ${image.slice(0, 60)}...`);
 
             const languages = Object.values(country.languages ?? {}).join(", ");
             const currencies = Object.values(country.currencies ?? {})
@@ -109,10 +91,9 @@ export function useDestinations() {
           })
         );
 
-        console.log("Todos los destinos cargados:", results.map(r => r.name));
         if (!cancelled) setDestinations(results);
+      // eslint-disable-next-line @typescript-eslint/no-unused-vars
       } catch (err) {
-        console.error("Error en useDestinations:", err);
         if (!cancelled) setError("Error loading destinations. Try again later.");
       } finally {
         if (!cancelled) setLoading(false);
@@ -120,9 +101,7 @@ export function useDestinations() {
     }
 
     load();
-    return () => {
-      cancelled = true;
-    };
+    return () => { cancelled = true; };
   }, []);
 
   return { destinations, loading, error };

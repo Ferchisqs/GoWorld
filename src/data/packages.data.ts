@@ -4,8 +4,10 @@ export interface Package {
   image: string;
   startDate: string;
   endDate: string;
-  price: number;
-  currency: string;
+  priceUSD: number;
+  priceMXN: number;
+  continent: "asia" | "europe" | "america" | "africa" | "oceania";
+  durationDays: number;
 }
 
 export const packages: Package[] = [
@@ -15,8 +17,10 @@ export const packages: Package[] = [
     image: "/images/packages/tokyo.jpg",
     startDate: "04 Feb 2026",
     endDate: "22 Feb 2026",
-    price: 4650,
-    currency: "USD",
+    priceUSD: 4650,
+    priceMXN: 89500,
+    continent: "asia",
+    durationDays: 18,
   },
   {
     id: 2,
@@ -24,8 +28,10 @@ export const packages: Package[] = [
     image: "/images/packages/rome.jpg",
     startDate: "04 Feb 2026",
     endDate: "22 Feb 2026",
-    price: 4650,
-    currency: "USD",
+    priceUSD: 4650,
+    priceMXN: 89500,
+    continent: "europe",
+    durationDays: 18,
   },
   {
     id: 3,
@@ -33,7 +39,9 @@ export const packages: Package[] = [
     image: "/images/packages/paris.jpg",
     startDate: "04 Feb 2026",
     endDate: "22 Feb 2026",
-    price: 4650,
-    currency: "USD",
+    priceUSD: 4650,
+    priceMXN: 89500,
+    continent: "europe",
+    durationDays: 18,
   },
 ];

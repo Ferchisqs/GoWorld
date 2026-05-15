@@ -6,9 +6,10 @@ interface QuoteResultPanelProps {
   result: QuoteResult | null;
   calculated: boolean;
   theme: string;
+  currency: "USD" | "MXN";
 }
 
-const QuoteResultPanel = ({ result, calculated, theme }: QuoteResultPanelProps) => {
+const QuoteResultPanel = ({ result, calculated, theme, currency }: QuoteResultPanelProps) => {
   const { t } = useTranslation();
 
   const panelBg = theme === "dark" ? "bg-gray-900 border-[#0f2a08]" : "bg-white border-gray-200";
@@ -48,20 +49,21 @@ const QuoteResultPanel = ({ result, calculated, theme }: QuoteResultPanelProps) 
           <div>
             <p className="text-white/50 font-['Poppins'] text-xs">{t("quote.result.totalCost")}</p>
             <p className="text-[#8ED77C] font-['Poppins'] font-extrabold text-3xl mt-0.5">
-              {fmt(result.grandTotal)}
+              {fmt(result.grandTotal, currency)}
             </p>
           </div>
           <div className="text-right">
             <p className="text-white/50 font-['Poppins'] text-xs">{t("quote.result.dailyCost")}</p>
             <p className="text-white font-['Poppins'] font-bold text-xl mt-0.5">
-              {fmt(result.dailyPerPerson)}
+              {fmt(result.dailyPerPerson, currency)}
             </p>
             <p className="text-white/30 font-['Poppins'] text-[10px]">{t("quote.result.perPersonPerNight")}</p>
           </div>
         </div>
         <div className="mt-3 pt-3 border-t border-white/10">
           <p className="text-white/50 font-['Poppins'] text-xs">
-            {t("quote.result.perPerson")}: <span className="text-white font-semibold">{fmt(result.perPerson)}</span>
+            {t("quote.result.perPerson")}:{" "}
+            <span className="text-white font-semibold">{fmt(result.perPerson, currency)}</span>
           </p>
         </div>
       </div>
@@ -73,13 +75,10 @@ const QuoteResultPanel = ({ result, calculated, theme }: QuoteResultPanelProps) 
         </p>
         <div className="flex flex-col gap-2">
           {result.breakdown.map((item, i) => (
-            <div
-              key={i}
-              className={`flex justify-between items-center rounded-xl px-3 py-2.5 ${rowBg}`}
-            >
+            <div key={i} className={`flex justify-between items-center rounded-xl px-3 py-2.5 ${rowBg}`}>
               <p className={`font-['Poppins'] text-xs flex-1 pr-2 ${textMuted}`}>{item.label}</p>
               <p className={`font-['Poppins'] font-semibold text-sm flex-shrink-0 ${textMain}`}>
-                {fmt(item.amount)}
+                {fmt(item.amount, currency)}
               </p>
             </div>
           ))}
@@ -89,7 +88,7 @@ const QuoteResultPanel = ({ result, calculated, theme }: QuoteResultPanelProps) 
               {t("quote.result.total")}
             </p>
             <p className="font-['Poppins'] font-extrabold text-sm text-[#061202]">
-              {fmt(result.grandTotal)}
+              {fmt(result.grandTotal, currency)}
             </p>
           </div>
         </div>

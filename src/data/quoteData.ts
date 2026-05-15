@@ -1,4 +1,4 @@
-// ─── Destination base prices (USD per person per night) ───────────────────
+
 export const DESTINATIONS = [
   { key: "japan",   label: "Japan 🇯🇵",   basePrice: 180, flag: "🇯🇵" },
   { key: "france",  label: "France 🇫🇷",  basePrice: 160, flag: "🇫🇷" },
@@ -10,14 +10,12 @@ export const DESTINATIONS = [
   { key: "belgium", label: "Belgium 🇧🇪", basePrice: 145, flag: "🇧🇪" },
 ];
 
-// ─── Travel style multipliers ──────────────────────────────────────────────
 export const TRAVEL_STYLES = [
   { key: "basic",    label: "Basic",    multiplier: 1.0,},
   { key: "standard", label: "Standard", multiplier: 1.5 },
   { key: "premium",  label: "Premium",  multiplier: 2.4 },
 ];
 
-// ─── Additional services ───────────────────────────────────────────────────
 export interface AdditionalService {
   key: string;
   labelKey: string;
@@ -32,7 +30,6 @@ export const ADDITIONAL_SERVICES: AdditionalService[] = [
   { key: "advisory",  labelKey: "quote.services.advisory",  pricePerPerson:  50,  },
 ];
 
-// ─── Price calculator ──────────────────────────────────────────────────────
 export interface QuoteInput {
   destination: string;
   travelers: number;
@@ -97,5 +94,14 @@ export const calculateQuote = (input: QuoteInput): QuoteResult | null => {
   };
 };
 
-export const fmt = (n: number) =>
-  new Intl.NumberFormat("en-US", { style: "currency", currency: "USD", maximumFractionDigits: 0 }).format(n);
+export const MXN_RATE = 17.5; 
+
+export const fmt = (n: number, currency: "USD" | "MXN" = "USD") => {
+  const formatted = new Intl.NumberFormat(currency === "MXN" ? "es-MX" : "en-US", {
+    style: "currency",
+    currency,
+    maximumFractionDigits: 0,
+  }).format(currency === "MXN" ? n * MXN_RATE : n);
+
+  return `${formatted} ${currency}`;
+};

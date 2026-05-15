@@ -47,7 +47,21 @@
       "description": "Experience a romantic getaway in the City of Love, with special dinners, strolls and luxury hotels included.",
       "fullDescription": "Let yourself be swept away by the magic of the City of Love. This romantic package includes dinner at the Eiffel Tower, walks through Montmartre and a luxury experience designed especially for couples who want to celebrate their love in an unforgettable way.",
       "includes": ["Round-trip flights","5-star boutique hotel (18 nights)","Breakfast and romantic dinner included","Bilingual guide","Limousine transfers","Private dinner at the Eiffel Tower"]
-    }
+    },
+      "filter": {
+    "all":       "All",
+    "asia":      "Asia",
+    "europe":    "Europe",
+    "america":   "Americas",
+    "africa":    "Africa",
+    "oceania":   "Oceania",
+    "anyBudget": "Any budget",
+    "low":       "Budget",
+    "mid":       "Mid-range",
+    "high":      "Premium",
+    "empty":     "No packages match your filters."
+  }
+
   },
   "destinations": {
     "title": "Our best destinations",
@@ -77,7 +91,7 @@
       { "name": "Julio Gallegos", "review": "An incredible experience from start to finish. The team took care of every detail and made our Tokyo trip absolutely unforgettable. Highly recommended!" },
       { "name": "Alberto Sebastian", "review": "The Rome family package was perfect. Our kids loved every moment and the bilingual guide made everything so much easier. We'll definitely book again." },
       { "name": "Paola Penagos", "review": "Our honeymoon in Paris exceeded every expectation. The private dinner at the Eiffel Tower was magical. Go World made our dream trip a reality." },
-      { "name": "Dianelly Mijangos", "review": "Professional, attentive, and truly passionate about travel. From booking to the last day, everything went smoothly. Five stars without hesitation!" }
+      { "name": "Dianelly Mijangos", "review": "Professional, attentive, and truly passionate about travel.I enjoyed my trip to France, From booking to the last day, everything went smoothly. Five stars without hesitation!" }
     ]
   },
   "about": {
@@ -170,5 +184,8 @@
     "errors": {
       "selectDestination": "Please select a destination before calculating."
     }
+   
   }
+  
+  
 }
