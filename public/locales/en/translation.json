@@ -1,0 +1,174 @@
+{
+  "nav": {
+    "home": "Home",
+    "packages": "Packages",
+    "destinations": "Destinations",
+    "questions": "Questions",
+    "opinions": "Opinions",
+    "about": "About",
+    "quote": "Quote",
+    "contact": "Contact"
+  },
+  "hero": {
+    "titleLine1": "Collect moments",
+    "titleLine2": "from around",
+    "titleLine3Pre": "the",
+    "titleHighlight": "world",
+    "subtitle": "Destinations, experiences and adventures designed for travelers like you.",
+    "cta": "See our destinations",
+    "img1Alt": "Airplane in hangar",
+    "img2Alt": "Airplane at airport at sunset"
+  },
+  "packages": {
+    "title": "Travel Packages",
+    "seeMore": "See more",
+    "modal": {
+      "departure": "Departure",
+      "return": "Return",
+      "cta": "Quote this package"
+    },
+    "tokyo": {
+      "title": "Cultural tour of Tokyo",
+      "city": "Tokyo",
+      "description": "Visit Tokyo's temples, explore the famous Shibuya street and experience its pop culture, with hotels and meals included.",
+      "fullDescription": "Immerse yourself in the fascinating mix of tradition and modernity that Tokyo offers. From ancient temples to futuristic skyscrapers, this package is designed for you to experience Japan in the most authentic way possible. Includes bilingual guide, 4-star hotel accommodation and transfers.",
+      "includes": ["Round-trip flights","4-star hotel (18 nights)","Breakfast and dinner included","Bilingual guide","Airport-hotel transfers","Tours to temples and Shibuya"]
+    },
+    "rome": {
+      "title": "Family trip to Rome",
+      "city": "Rome",
+      "description": "Explore the Colosseum, Trevi Fountain and Italian cuisine, with hotels and activities for the whole family.",
+      "fullDescription": "Rome awaits you with its millennial history, unmatched gastronomy and iconic monuments. A package designed for the whole family to enjoy from the Colosseum to the Trevi Fountain, with activities for all ages.",
+      "includes": ["Round-trip flights","4-star hotel (18 nights)","Breakfast included","Bilingual guide","Airport-hotel transfers","Colosseum and museums entry"]
+    },
+    "paris": {
+      "title": "Honeymoon in Paris",
+      "city": "Paris",
+      "description": "Live a romantic experience in the City of Love, with special dinners, walks and luxury hotels included.",
+      "fullDescription": "Let yourself be swept away by the magic of the City of Love. This romantic package includes a dinner at the Eiffel Tower, walks through Montmartre and a luxury experience designed especially for couples who want to celebrate their love in an unforgettable way.",
+      "includes": ["Round-trip flights","5-star boutique hotel (18 nights)","Breakfast and romantic dinner included","Bilingual guide","Limousine transfers","Private dinner at the Eiffel Tower"]
+    }
+  },
+  "destinations": {
+    "title": "Our best destinations",
+    "timezone": "Timezone",
+    "languages": "Languages",
+    "population": "Population",
+    "currencies": "Currencies",
+    "loading": "Loading destinations..."
+  },
+  "qa": {
+    "title": "FAQ",
+    "subtitle": "Frequently asked questions about our travel services",
+    "items": [
+      { "question": "How do I book a package?", "answer": "You can book directly from our website by selecting your desired package and filling out the quote form. Our team will contact you within 24 hours to confirm your reservation." },
+      { "question": "What does each package include?", "answer": "Each package includes round-trip flights, hotel accommodation, breakfast, a bilingual guide, and airport-hotel transfers. Some packages also include additional tours and special dinners." },
+      { "question": "Can I customize my travel plan?", "answer": "Absolutely! We offer personalized packages tailored to your needs. Contact us and one of our advisors will design an itinerary according to your preferences and budget." },
+      { "question": "What is the cancellation policy?", "answer": "Cancellations made 30+ days before departure receive a full refund. Between 15–29 days, 50% is refunded. Within 14 days, no refund applies, but we can reschedule your trip." },
+      { "question": "Is travel insurance included?", "answer": "Basic travel insurance is included in all our packages. We also offer the option to upgrade to premium coverage that includes medical emergencies, trip interruption, and lost luggage." },
+      { "question": "How far in advance should I book?", "answer": "We recommend booking at least 4–6 weeks in advance to ensure availability and the best prices. For peak seasons like summer and holidays, we suggest booking 3–4 months ahead." }
+    ]
+  },
+  "opinions": {
+    "titleLine1": "Take a look at our",
+    "titleLine2": "customer reviews",
+    "subtitle": "Real experiences from travelers who chose Go World.",
+    "reviews": [
+      { "name": "Julio Gallegos", "review": "An incredible experience from start to finish. The team took care of every detail and made our Tokyo trip absolutely unforgettable. Highly recommended!" },
+      { "name": "Alberto Sebastian", "review": "The Rome family package was perfect. Our kids loved every moment and the bilingual guide made everything so much easier. We'll definitely book again." },
+      { "name": "Paola Peregas", "review": "Our honeymoon in Paris exceeded every expectation. The private dinner at the Eiffel Tower was magical. Go World made our dream trip a reality." },
+      { "name": "Dianelly Mijangos", "review": "Professional, attentive, and truly passionate about travel. From booking to the last day, everything went smoothly. Five stars without hesitation!" }
+    ]
+  },
+  "about": {
+    "title": "About us",
+    "passportLabel": "Company profile",
+    "whoWeAre": "Who are we?",
+    "description": "Go World is a travel agency with years of experience creating personalized and unforgettable journeys. We specialize in custom vacations, cultural experiences, and exclusive destinations designed around each traveler’s needs.Our focus is on delivering professional service, attention to detail, and authentic experiences that go beyond traditional tourism. Guided by passion, trust, and innovation, we help people explore the world in a unique and meaningful way.",
+    "stat1Value": "10+",
+    "stat1Label": "Years",
+    "stat2Value": "50+",
+    "stat2Label": "Destinations",
+    "stat3Value": "1k+",
+    "stat3Label": "Travelers"
+  } ,
+  "contact": {
+  "eyebrow": "We are here to guide you",
+  "titleLine1": "START TRAVELING",
+  "titleLine2": "WITH US",
+  "description": "Contact us for more information about our services.",
+  "emailLabel": "Email",
+  "phoneLabel": "Phone",
+  "form": {
+    "name": "Name",
+    "namePlaceholder": "Your full name",
+    "email": "Email",
+    "emailPlaceholder": "youremail@email.com",
+    "phone": "Phone (optional)",
+    "phonePlaceholder": "+52 xxx xxx xxx",
+    "message": "Message",
+    "messagePlaceholder": "How can we help you?",
+    "send": "Send",
+    "sending": "Sending..."
+  },
+  "alert": {
+    "success": "Message sent successfully! We will get back to you soon.",
+    "error": "Something went wrong while sending your message. Please try again."
+  },
+  "errors": {
+    "nameRequired": "Name is required.",
+    "nameMin": "Name must be at least 2 characters.",
+    "emailRequired": "Email is required.",
+    "emailInvalid": "Please enter a valid email address.",
+    "phoneInvalid": "Please enter a valid phone number.",
+    "messageRequired": "Message is required.",
+    "messageMin": "Message must be at least 10 characters."
+  }
+
+},"footer": {
+    "explore": "Explore",
+    "company": "Company",
+    "support": "Support",
+    "location": "Chiapas, Mexico 🇲🇽",
+    "copyright": "© 2026 Go World. All rights reserved."
+  },
+  "quote": {
+    "title": "Get a quote for your trip",
+    "subtitle": "Fill in the details and get an instant estimate for your dream journey.",
+    "form": {
+      "destination": "Destination country",
+      "destinationPlaceholder": "Select a destination",
+      "travelers": "Travellers",
+      "nights": "Nights",
+      "travelStyle": "Travel style",
+      "additionalServices": "Additional services",
+      "calculate": "Calculate"
+    },
+    "styles": {
+      "basic": "Basic",
+      "standard": "Standard",
+      "premium": "Premium"
+    },
+    "services": {
+      "transfer": "Airport-hotel transfer",
+      "insurance": "Travel insurance",
+      "tours": "Guided tours",
+      "hotel": "Superior accommodation",
+      "advisory": "Personal advisory"
+    },
+    "result": {
+      "placeholder": "Your quote will appear here",
+      "placeholderSub": "Complete the form and press Calculate",
+      "destination": "Destination",
+      "totalCost": "Total cost",
+      "dailyCost": "Daily cost",
+      "perPersonPerNight": "per person / night",
+      "perPerson": "Per person",
+      "costDetails": "Cost details",
+      "total": "Total"
+    },
+    "errors": {
+      "selectDestination": "Please select a destination before calculating."
+    }
+  }
+}
