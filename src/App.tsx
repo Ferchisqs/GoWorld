@@ -24,8 +24,8 @@ export default function App() {
           <About/>
           <Quote/>
           <Contact/>
-          <Footer/>
         </main>
+        <Footer/>
       </div>
     </ThemeProvider>
   );
