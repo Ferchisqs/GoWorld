@@ -29,30 +29,36 @@ const About = () => {
               : "border-gray-200 shadow-[0_20px_60px_rgba(6,18,2,0.15)]"
           }`}
         >
+          {/* PC */}
           <div className="hidden sm:grid sm:grid-cols-[1fr_1fr]">
             <PassportLeft theme={theme} />
             <PassportRight />
           </div>
 
+          {/* Mobile */}
           <div className="flex sm:hidden flex-col">
-            <div
-              className={`relative flex flex-col items-start p-6 overflow-hidden transition-colors duration-300 ${
-                theme === "dark" ? "bg-gray-100" : "bg-white"
-              }`}
-            >
+          
+            <div className="relative flex flex-col items-center p-6 overflow-hidden bg-gray-100">
+              {/* Dots rail */}
+              <div className="absolute left-0 top-0 h-full w-3 flex flex-col justify-around items-center py-3">
+                {Array.from({ length: 14 }).map((_, i) => (
+                  <div key={i} className="w-2 h-2 rounded-full bg-gray-200" />
+                ))}
+              </div>
+
               {/* Logo */}
               <img
-                src={theme === "dark" ? "/images/logo/Logo-Dark.png" : "/images/logo/Logo.png"}
+                src="/images/logo/Logo.png"
                 alt="Go World logo"
-                className="h-9 object-contain mb-4"
+                className="h-9 object-contain mb-5 self-start ml-4"
               />
 
-              {/* Sello */}
-              <div className="relative w-full h-44">
+              {/* Stamps */}
+              <div className="w-full flex items-center justify-center px-4">
                 <img
                   src="/images/about/Sello.png"
                   alt="Travel stamps"
-                  className="w-full h-full object-contain object-left"
+                  className="w-full max-w-xs object-contain"
                 />
               </div>
             </div>

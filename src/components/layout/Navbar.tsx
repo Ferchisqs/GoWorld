@@ -28,7 +28,7 @@ export default function Navbar() {
 
   return (
     <nav className="fixed top-0 left-0 w-full z-50 bg-white dark:bg-neutral-900 shadow-sm transition-colors duration-300 border-b border-neutral-100 dark:border-neutral-800">
-      <div className="max-w-7xl mx-auto px-6 py-3 flex items-center justify-between">
+      <div className="max-w-7xl mx-auto px-16 py-3 flex items-center justify-between">
 
         {/* Logo */}
         <a href="#home" className="flex items-center z-50">
