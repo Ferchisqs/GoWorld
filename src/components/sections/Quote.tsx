@@ -61,14 +61,13 @@ const Quote = () => {
           </p>
         </div>
 
-        {error && (
-          <div className="mb-6 flex items-center gap-3 bg-red-50 border border-red-300 rounded-xl px-5 py-3 max-w-md mx-auto">
-            <span className="text-red-500 text-lg">Alert</span>
-            <p className="text-red-700 font-['Poppins'] text-sm font-medium">
-              {t("quote.errors.selectDestination")}
-            </p>
-          </div>
-        )}
+          {error && (
+    <div className="mb-6 flex items-center gap-3 bg-red-50 border border-red-300 rounded-xl px-5 py-3 w-fit mx-auto">
+      <p className="text-red-700 font-['Poppins'] text-sm font-medium whitespace-nowrap">
+        {t("quote.errors.selectDestination")}
+      </p>
+    </div>
+  )}
 
         {/* Main */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-start">

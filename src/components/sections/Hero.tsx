@@ -12,7 +12,6 @@ const Hero: React.FC = () => {
       id="home"
       className="relative min-h-screen pt-10 overflow-hidden bg-white dark:bg-neutral-950 transition-colors duration-300"
     >
-      {/* Diagonal */}
       <div aria-hidden className="absolute inset-0 pointer-events-none">
         <svg
           className="absolute inset-0 w-full h-full"
@@ -20,13 +19,11 @@ const Hero: React.FC = () => {
           preserveAspectRatio="none"
           xmlns="http://www.w3.org/2000/svg"
         >
-          {/* Light mode */}
           <polygon
             className="block dark:hidden"
             points="1440,280 1440,900 0,900 0,720"
             fill="#8ED77C"
           />
-          {/* Dark mode */}
           <polygon
             className="hidden dark:block"
             points="1440,280 1440,900 0,900 0,720"
@@ -36,11 +33,11 @@ const Hero: React.FC = () => {
       </div>
 
       {/* Main */}
-      <div className="relative z-10 max-w-7xl mx-auto px-6 md:px-16 flex flex-col md:flex-row items-center justify-between min-h-[calc(100vh-80px)] py-12 gap-8 md:gap-4">
+      <div className="relative z-10 max-w-7xl mx-auto px-6 md:px-16 flex flex-col lg:flex-row items-center justify-between min-h-[calc(100vh-80px)] py-12 gap-12 lg:gap-4">
 
-        {/* Left Side */}
-        <div className="flex-1 z-10 text-left max-w-lg">
-          <h1 className="font-[Poppins] font-extrabold text-5xl md:text-6xl lg:text-7xl leading-[1] text-neutral-900 dark:text-white uppercase tracking-tighter">
+        {/* Left */}
+        <div className="flex-1 z-10 text-center lg:text-left max-w-lg mx-auto lg:mx-0">
+          <h1 className="font-[Poppins] font-extrabold text-4xl sm:text-5xl md:text-6xl lg:text-7xl leading-[1] text-neutral-900 dark:text-white uppercase tracking-tighter">
             {t("hero.titleLine1")}
             <br />
             {t("hero.titleLine2")}
@@ -51,7 +48,7 @@ const Hero: React.FC = () => {
             </span>
           </h1>
 
-          <p className="mt-6 font-[Poppins] text-base md:text-lg text-neutral-600 dark:text-neutral-400 max-w-sm leading-snug">
+          <p className="mt-6 font-[Poppins] text-base md:text-lg text-neutral-600 dark:text-neutral-400 max-w-sm leading-snug mx-auto lg:mx-0">
             {t("hero.subtitle")}
           </p>
 
@@ -63,13 +60,14 @@ const Hero: React.FC = () => {
           </a>
         </div>
 
-        {/* Right Side */}
-        <div className="flex-1 relative w-full h-[380px] md:h-[520px] lg:h-[600px] flex justify-center items-center">
+        {/* Right  */}
+      
+        <div className="flex-1 relative w-full max-w-sm sm:max-w-md lg:max-w-none mx-auto lg:mx-0 h-[220px] sm:h-[280px] md:h-[360px] lg:h-[520px] xl:h-[600px]">
 
-          {/* Back image */}
+          {/* Back image  */}
           <div
-            className="absolute top-0 right-0 w-[80%] md:w-[78%] aspect-[4/3] rounded-[2rem] md:rounded-[2.5rem] overflow-hidden shadow-2xl"
-            style={{ transform: "rotate(-6deg) translateX(1.5rem) translateY(0.5rem)" }}
+            className="absolute top-0 right-0 w-[72%] aspect-[4/3] rounded-[1.5rem] lg:rounded-[2.5rem] overflow-hidden shadow-2xl"
+            style={{ transform: "rotate(-6deg) translateX(0.5rem)" }}
           >
             <img
               src={heroImg1}
@@ -81,11 +79,11 @@ const Hero: React.FC = () => {
 
           {/* Front image */}
           <div
-            className="absolute bottom-4 md:bottom-8 left-0 w-[80%] md:w-[78%] aspect-[4/3] rounded-[2rem] md:rounded-[2.5rem] overflow-hidden z-10"
+            className="absolute top-[30%] left-0 w-[72%] aspect-[4/3] rounded-[1.5rem] lg:rounded-[2.5rem] overflow-hidden z-10"
             style={{
               transform: "rotate(2deg)",
-              boxShadow: "0 30px 60px -10px rgba(0,0,0,0.45)",
-              border: "10px solid transparent",
+              boxShadow: "0 20px 50px -10px rgba(0,0,0,0.45)",
+              border: "8px solid transparent",
             }}
           >
             <img

@@ -19,12 +19,12 @@
     "img1Alt": "Avión en hangar",
     "img2Alt": "Avión en aeropuerto al atardecer"
   },
-  "packages": {
+ "packages": {
     "title": "Paquetes de Viaje",
     "seeMore": "Ver más",
+    "departure": "Salida",
+    "return": "Regreso",
     "modal": {
-      "departure": "Salida",
-      "return": "Regreso",
       "cta": "Cotizar este paquete"
     },
     "tokyo": {
@@ -76,7 +76,7 @@
     "reviews": [
       { "name": "Julio Gallegos", "review": "Una experiencia increíble de principio a fin. El equipo cuidó cada detalle y nuestro viaje a Tokio fue absolutamente inolvidable. ¡Totalmente recomendado!" },
       { "name": "Alberto Sebastian", "review": "El paquete familiar a Roma fue perfecto. Nuestros hijos disfrutaron cada momento y el guía bilingüe facilitó todo. Sin duda volveremos a reservar." },
-      { "name": "Paola Peregas", "review": "Nuestra luna de miel en París superó todas las expectativas. La cena privada en la Torre Eiffel fue mágica. Go World hizo realidad nuestro viaje soñado." },
+      { "name": "Paola Penagos", "review": "Nuestra luna de miel en París superó todas las expectativas. La cena privada en la Torre Eiffel fue mágica. Go World hizo realidad nuestro viaje soñado." },
       { "name": "Dianelly Mijangos", "review": "Profesionales, atentos y con una verdadera pasión por los viajes. Desde la reserva hasta el último día, todo fluyó a la perfección. ¡Cinco estrellas sin dudarlo!" }
     ]
   },

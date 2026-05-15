@@ -22,30 +22,30 @@
   "packages": {
     "title": "Travel Packages",
     "seeMore": "See more",
+    "departure": "Departure",
+    "return": "Return",
     "modal": {
-      "departure": "Departure",
-      "return": "Return",
-      "cta": "Quote this package"
+      "cta": "Get a quote for this package"
     },
     "tokyo": {
-      "title": "Cultural tour of Tokyo",
+      "title": "Tokyo Cultural Tour",
       "city": "Tokyo",
-      "description": "Visit Tokyo's temples, explore the famous Shibuya street and experience its pop culture, with hotels and meals included.",
-      "fullDescription": "Immerse yourself in the fascinating mix of tradition and modernity that Tokyo offers. From ancient temples to futuristic skyscrapers, this package is designed for you to experience Japan in the most authentic way possible. Includes bilingual guide, 4-star hotel accommodation and transfers.",
-      "includes": ["Round-trip flights","4-star hotel (18 nights)","Breakfast and dinner included","Bilingual guide","Airport-hotel transfers","Tours to temples and Shibuya"]
+      "description": "Visit Tokyo's temples, explore the famous Shibuya crossing and experience its pop culture, with hotels and meals included.",
+      "fullDescription": "Immerse yourself in Tokyo's fascinating blend of tradition and modernity. From ancient temples to futuristic skyscrapers, this package is designed so you can experience Japan in the most authentic way possible. Includes bilingual guide, 4-star hotel accommodation and transfers.",
+      "includes": ["Round-trip flights","4-star hotel (18 nights)","Breakfast and dinner included","Bilingual guide","Airport-hotel transfers","Temple and Shibuya tours"]
     },
     "rome": {
-      "title": "Family trip to Rome",
+      "title": "Family Trip to Rome",
       "city": "Rome",
-      "description": "Explore the Colosseum, Trevi Fountain and Italian cuisine, with hotels and activities for the whole family.",
-      "fullDescription": "Rome awaits you with its millennial history, unmatched gastronomy and iconic monuments. A package designed for the whole family to enjoy from the Colosseum to the Trevi Fountain, with activities for all ages.",
-      "includes": ["Round-trip flights","4-star hotel (18 nights)","Breakfast included","Bilingual guide","Airport-hotel transfers","Colosseum and museums entry"]
+      "description": "Explore the Colosseum, the Trevi Fountain and Italian cuisine, with hotels and activities for the whole family.",
+      "fullDescription": "Rome awaits with its ancient history, unmatched gastronomy and iconic monuments. A package designed so the whole family can enjoy everything from the Colosseum to the Trevi Fountain, with activities for all ages.",
+      "includes": ["Round-trip flights","4-star hotel (18 nights)","Breakfast included","Bilingual guide","Airport-hotel transfers","Colosseum and museum entry"]
     },
     "paris": {
       "title": "Honeymoon in Paris",
       "city": "Paris",
-      "description": "Live a romantic experience in the City of Love, with special dinners, walks and luxury hotels included.",
-      "fullDescription": "Let yourself be swept away by the magic of the City of Love. This romantic package includes a dinner at the Eiffel Tower, walks through Montmartre and a luxury experience designed especially for couples who want to celebrate their love in an unforgettable way.",
+      "description": "Experience a romantic getaway in the City of Love, with special dinners, strolls and luxury hotels included.",
+      "fullDescription": "Let yourself be swept away by the magic of the City of Love. This romantic package includes dinner at the Eiffel Tower, walks through Montmartre and a luxury experience designed especially for couples who want to celebrate their love in an unforgettable way.",
       "includes": ["Round-trip flights","5-star boutique hotel (18 nights)","Breakfast and romantic dinner included","Bilingual guide","Limousine transfers","Private dinner at the Eiffel Tower"]
     }
   },
@@ -76,7 +76,7 @@
     "reviews": [
       { "name": "Julio Gallegos", "review": "An incredible experience from start to finish. The team took care of every detail and made our Tokyo trip absolutely unforgettable. Highly recommended!" },
       { "name": "Alberto Sebastian", "review": "The Rome family package was perfect. Our kids loved every moment and the bilingual guide made everything so much easier. We'll definitely book again." },
-      { "name": "Paola Peregas", "review": "Our honeymoon in Paris exceeded every expectation. The private dinner at the Eiffel Tower was magical. Go World made our dream trip a reality." },
+      { "name": "Paola Penagos", "review": "Our honeymoon in Paris exceeded every expectation. The private dinner at the Eiffel Tower was magical. Go World made our dream trip a reality." },
       { "name": "Dianelly Mijangos", "review": "Professional, attentive, and truly passionate about travel. From booking to the last day, everything went smoothly. Five stars without hesitation!" }
     ]
   },

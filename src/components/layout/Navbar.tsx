@@ -22,14 +22,14 @@ export default function Navbar() {
     i18n.changeLanguage(i18n.language === "en" ? "es" : "en");
   };
 
-  const logoSrc = theme === "light" 
-    ? "/images/logo/Logo.png" 
+  const logoSrc = theme === "light"
+    ? "/images/logo/Logo.png"
     : "/images/logo/Logo-Dark.png";
 
   return (
     <nav className="fixed top-0 left-0 w-full z-50 bg-white dark:bg-neutral-900 shadow-sm transition-colors duration-300 border-b border-neutral-100 dark:border-neutral-800">
-      <div className="max-w-7xl mx-auto px-15 py-3 flex items-center justify-between">
-        
+      <div className="max-w-7xl mx-auto px-6 py-3 flex items-center justify-between">
+
         {/* Logo */}
         <a href="#home" className="flex items-center z-50">
           <img
@@ -39,8 +39,7 @@ export default function Navbar() {
           />
         </a>
 
-        {/* Desktop Links */}
-        <ul className="hidden md:flex items-center gap-7 font-sans text-sm font-medium text-neutral-700 dark:text-neutral-300">
+        <ul className="hidden lg:flex items-center gap-7 font-sans text-sm font-medium text-neutral-700 dark:text-neutral-300">
           {navLinks.map((link) => (
             <li key={link.key}>
               <a
@@ -53,8 +52,7 @@ export default function Navbar() {
           ))}
         </ul>
 
-        {/* Desktop Controls */}
-        <div className="hidden md:flex items-center gap-5">
+        <div className="hidden lg:flex items-center gap-5">
           <button
             onClick={toggleLang}
             className="font-sans text-sm font-bold text-neutral-800 dark:text-white hover:text-brand-green transition-colors"
@@ -73,18 +71,18 @@ export default function Navbar() {
 
         {/* Hamburger Icon */}
         <button
-          className="md:hidden z-50 p-2 flex flex-col gap-1.5"
+          className="lg:hidden z-50 p-2 flex flex-col gap-1.5"
           onClick={() => setMenuOpen(!menuOpen)}
+          aria-label="Toggle menu"
         >
-          <span className={`block w-6 h-0.5 bg-neutral-900 dark:bg-white transition-all ${menuOpen ? "rotate-45 translate-y-2" : ""}`} />
-          <span className={`block w-6 h-0.5 bg-neutral-900 dark:bg-white transition-all ${menuOpen ? "opacity-0" : ""}`} />
-          <span className={`block w-6 h-0.5 bg-neutral-900 dark:bg-white transition-all ${menuOpen ? "-rotate-45 -translate-y-2" : ""}`} />
+          <span className={`block w-6 h-0.5 bg-neutral-900 dark:bg-white transition-all duration-300 ${menuOpen ? "rotate-45 translate-y-2" : ""}`} />
+          <span className={`block w-6 h-0.5 bg-neutral-900 dark:bg-white transition-all duration-300 ${menuOpen ? "opacity-0" : ""}`} />
+          <span className={`block w-6 h-0.5 bg-neutral-900 dark:bg-white transition-all duration-300 ${menuOpen ? "-rotate-45 -translate-y-2" : ""}`} />
         </button>
       </div>
 
-      {/* Mobile Menu Overlay */}
       <div
-        className={`fixed inset-0 bg-white dark:bg-neutral-900 z-40 transition-transform duration-500 ease-in-out md:hidden ${
+        className={`fixed inset-0 bg-white dark:bg-neutral-900 z-40 transition-transform duration-500 ease-in-out lg:hidden ${
           menuOpen ? "translate-x-0" : "translate-x-full"
         }`}
       >

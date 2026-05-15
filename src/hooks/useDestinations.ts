@@ -37,7 +37,7 @@ async function fetchCountry(name: string): Promise<CountryRaw> {
 }
 
 async function fetchUnsplashImage(query: string): Promise<string> {
-  console.log(`🔍 Buscando imagen para: "${query}"`);
+  console.log(` Buscando imagen para: "${query}"`);
 
   if (!UNSPLASH_ACCESS_KEY) {
     const fallback = `https://picsum.photos/seed/${encodeURIComponent(query)}/800/600`;
@@ -46,7 +46,7 @@ async function fetchUnsplashImage(query: string): Promise<string> {
   }
 
   const url = `https://api.unsplash.com/search/photos?query=${encodeURIComponent(query)}&per_page=3&orientation=landscape&content_filter=high`;
-  console.log(`📡 Fetch a Unsplash:`, url);
+  console.log(` Fetch a Unsplash:`, url);
 
   const res = await fetch(url, {
     headers: {
