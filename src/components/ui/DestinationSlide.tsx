@@ -1,6 +1,6 @@
 import React from "react";
 import { useTranslation } from "react-i18next";
-import type { DestinationData } from "../../hooks/useDestinations";
+import type { DestinationData } from "../../types/destination.types";
 
 interface DestinationSlideProps {
   destination: DestinationData;

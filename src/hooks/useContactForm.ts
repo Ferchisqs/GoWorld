@@ -1,20 +1,7 @@
 import { useState } from "react";
 
-export type FormStatus = "idle" | "loading" | "success" | "error";
+import type { FormFields, FormErrors, FormStatus } from '../types/contact.types';
 
-export interface FormFields {
-  name: string;
-  email: string;
-  phone: string;
-  message: string;
-}
-
-export interface FormErrors {
-  name?: string;
-  email?: string;
-  phone?: string;
-  message?: string;
-}
 
 const EMAIL_REGEX = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 const PHONE_REGEX = /^[\d\s+\-().]{7,20}$/;

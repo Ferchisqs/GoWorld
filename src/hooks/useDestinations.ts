@@ -1,14 +1,5 @@
 import { useEffect, useState } from "react";
-
-export interface DestinationData {
-  name: string;
-  timezone: string;
-  languages: string;
-  population: string;
-  currencies: string;
-  image: string;
-  flagEmoji?: string;
-}
+import type {DestinationData} from '../types/destination.types';
 
 interface CountryRaw {
   name: { common: string };

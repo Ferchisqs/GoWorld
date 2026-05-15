@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { useTranslation } from "react-i18next";
 import { useDestinations } from "../../hooks/useDestinations";
-import type { DestinationData } from "../../hooks/useDestinations";
+import type { DestinationData } from "../../types/destination.types";
 
 const InfoPill: React.FC<{ label: string; value: string }> = ({ label, value }) => (
   <div className="flex flex-col items-center gap-0.5">
