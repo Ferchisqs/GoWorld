@@ -37,8 +37,11 @@ cd goworld
 npm install
 
 # 3. Crear archivo .env en la raíz del proyecto
-# Agrega la variable:
-# VITE_UNSPLASH_ACCESS_KEY=tu_access_key
+# Agregar las variables:
+VITE_BASE_URL_COUNTRIES=your_ulr_contries_key_here
+VITE_BASE_URL_UNSPLASH=your_unsplash_url_key_here
+VITE_UNSPLASH_ACCESS_KEY=your_unsplash_access_key_here
+
 
 # 4. Servidor de desarrollo
 npm run dev
