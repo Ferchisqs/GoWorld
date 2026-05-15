@@ -11,6 +11,7 @@ Una landing page para agencia de viajes construida con **React + TypeScript + Vi
 Puedes visualizar el proceso de diseño y maquetado en Figma aquí:
 
 [Figma Design](https://www.figma.com/design/tVsP7af1VLH1X4bZ2NP97z/GoWorld?node-id=0-1&t=8ANPxMjIKiPiVcvF-1)
+[App Web Dezplegada](https://go-world-psi.vercel.app/)
 
 Incluye:
 - Wireframes iniciales
